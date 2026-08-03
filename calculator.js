@@ -14,6 +14,11 @@ function appendNumber(number) {
   }
 }
 
+// OPERATORS + decimal — just add the symbol to the screen
+function appendOperation(operation) {
+  screen.textContent += operation;
+}
+
 
 // // Receives a value — notice the (number) in the parentheses
 // function appendNumber(number) {
