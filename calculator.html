@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+<div class="calculator">
+    
+    <div class="screen">0</div>
+
+    <div class="row">
+    <button class="other" onclick="clearDisplay()">NUM Lock</button>
+    <button class="other" onclick="clearDisplay()">CLEAR</button>
+      <button class="other" onclick="appendOperation('/')">/</button>
+      <button class="other" onclick="appendOperation('*')">*</button>
+    </div>
+
+
+    <div class="row">
+    <button class="numbers" onclick="appendNumber('7')">7</button>
+    <button class="numbers" onclick="appendNumber('8')">8</button>
+    <button class="numbers" onclick="appendNumber('9')">9</button>
+    <button class="other" onclick="appendOperation('-')">-</button>
+    </div>
+
+    <div class="row">
+    <button class="numbers" onclick="appendNumber('4')">4</button>
+    <button class="numbers" onclick="appendNumber('5')">5</button>
+    <button class="numbers" onclick="appendNumber('6')">6</button>
+    <button class="other" onclick="appendOperation('+')">+</button>
+    </div>
+
+    <div class="row">
+    <button class="numbers" onclick="appendNumber('1')">1</button>
+    <button class="numbers" onclick="appendNumber('2')">2</button>
+    <button class="numbers" onclick="appendNumber('3')">3</button>
+    <div class="spaceholder"></div>
+    </div>
+
+    <div class="row">
+    <button class="numberzero" onclick="appendNumber('0')">0</button>
+    <button class="other" onclick="appendOperation('.')">.</button>
+    <button class="equalother" onclick="calculate()">=</button>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

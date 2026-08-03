@@ -1,0 +1,93 @@
+* {                                   /* applies to EVERY element on the page */
+  box-sizing: border-box;             /* width now INCLUDES border + padding — no surprise overflow */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2rem;                  /* 1.2x the root font size */
+  font-weight: bold;
+  color: #fff;                        /* white text */
+  text-align: center;                 /* centers text horizontally everywhere (buttons inherit this) */
+}
+
+.calculator {
+  background-color: red;
+  border: 2.5px solid black;          /* shorthand: width + style + color in one line */
+  border-radius: 8%;
+  width: 470px;                       /* holds the 420px grid + 15px padding each side */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;             /* stacks screen + rows top to bottom */
+  align-items: center;                /* centers the screen and rows horizontally */
+  margin: 0 auto;                     /* centers the whole calculator on the page */
+}
+
+.screen{
+              width: 100%;
+            height: 50px;
+            text-align: right;
+            font-size: 1.5rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #ffeb3b;
+            border-radius: 8px;
+            color: #333;
+  
+}
+
+.row {
+  height: 100px;
+  width: 420px;                       /* 4 buttons (360) + 3 gaps (60) = 420 */
+  display: flex;                      /* default direction = row → buttons sit side by side */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;                          /* space between buttons */
+}
+
+.other {
+  background-color: blue;             /* operator buttons */
+  border: 2.5px solid black;
+  border-radius: 10%;                 /* rounds the corners (not a full circle) */
+  height: 90px;
+  width: 90px;
+  display: flex;                      /* makes align-items actually work */
+  justify-content: center;
+  align-items: center;                /* centers the label vertically + horizontally */
+}
+
+.numbers {
+  background-color: aqua;             /* number buttons */
+  border: 2.5px solid black;
+  border-radius: 10%;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceholder{
+  height: 90px;
+  width: 90px;
+}
+
+.numberzero {
+  background-color: aqua;
+  border: 2.5px solid black;
+  border-radius: 10%;
+  height: 90px;
+  width: 200px;                       /* same 2-column span as .clearbutton */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equalother{
+  background-color: blue;
+  border: 2.5px solid black;
+  border-radius: 10%;
+  height: 200px;
+  width: 90px;                       /* same 2-column span as .clearbutton */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
